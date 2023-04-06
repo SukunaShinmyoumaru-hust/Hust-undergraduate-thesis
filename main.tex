@@ -1,0 +1,55 @@
+\documentclass[thesis,biblatex]{template/hust}
+% \documentclass[proposal,biblatex]{template/hust}       % 开题报告
+% \documentclass[translation,biblatex]{template/hust}    % 文献翻译
+
+\addbibresource{ref.bib}      % 不用 biblatex 就注释掉
+\usepackage{macros}
+
+\title{基于Look Ahead技术的机器人导航算法设计与实现}
+%\title{Design and Implementation of Robot Navigation Algorithm Based on Look Ahead Technology}
+
+\author{朱旭鹏}
+\school{计算机科学与技术}
+\classnum{计算机校交1902班}
+\stunum{U201913821}
+\instructor{余辰}
+
+
+% 毕业论文模板
+\begin{document}
+    \maketitle                              % 封面
+    \authorization                          % 原创页（不保密）
+    % \authorization[x]                     % 原创页（保密 x 年）
+    
+    \pagenumbering{Roman}
+    \include{body/abstract-ch}              % 中文摘要
+    \include{body/abstract-en}              % 英文摘要
+    \tableofcontents                        % 目录
+    \pagenumbering{arabic}
+    \include{body/chapter1}                 % 正文
+    \include{body/chapter2}
+    \include{body/chapter3}
+    \include{body/chapter4}
+    \include{body/chapter5}
+    \include{body/chapter6}
+    
+    \include{body/acknowledgement}          % 致谢
+    \include{body/references}               % 参考文献
+    \appendix                               % 附录
+    \include{body/appendices}
+\end{document}
+
+% 翻译/开题报告模板
+% \begin{document}
+%     \maketitle                              % 封面
+%     \input{body/chapter1}                   % 正文
+%     \input{body/chapter2}
+%     \input{body/chapter3}
+%     \input{body/chapter4}
+%     \input{body/chapter5}
+%     \input{body/acknowledgement}            % 致谢
+%     \input{body/references}                 % 参考文献
+%     \appendix                               % 附录
+%     \input{body/appendices}
+%     % \originalart{pdf/ori.pdf}             % 文献翻译插入原文
+% \end{document}
